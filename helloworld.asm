@@ -1,3 +1,5 @@
+; The classical  hello world
+
 section .text						; make main functino externally visible
 		global  _start
 _start:
