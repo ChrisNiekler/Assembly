@@ -10,7 +10,9 @@ compile:
 	#exercise1
 	nasm -f elf exercise1.asm
 	gcc -o exercise1 exercise1.o
-		
+	#twoToThePowerOf4
+	nasm -f elf twoToThePowerOf4.asm
+	gcc -o twoToThePowerOf4 twoToThePowerOf4.o
 	# v = mark, y = copy , p/P = paste before / after
 	#delete unnessecary files
 	rm -f *.o
@@ -20,3 +22,4 @@ clean:
 	rm -f helloworld
 	rm -f input
 	rm -f exercise1
+	rm -f twoToThePowerOf4
