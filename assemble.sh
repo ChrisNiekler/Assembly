@@ -3,7 +3,7 @@ error="Please provide a file with the ending .asm\nFor Example: ./assemble.sh ex
 if [ ! -z "$1" ]
 	then
 		NAME=$1
-		echo "You provided a wrong filename"
+		
 		if [ ${NAME: -4} == .asm ]
 		then
 			NAME=${NAME::-4}
