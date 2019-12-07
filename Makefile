@@ -7,12 +7,6 @@ compile:
 	#input
 	nasm -f elf input.asm
 	ld -m elf_i386 -s -o input input.o
-	#stars
-	nasm -f elf stars.asm
-	ld -m elf_i386 -s -o stars stars.o
-	#hellofive
-	nasm -f elf hellofive.asm
-	ld -m elf_i386 -s -o hellofive hellofive.o
 		
 	# v = mark, y = copy , p/P = paste before / after
 	#delete unnessecary files
